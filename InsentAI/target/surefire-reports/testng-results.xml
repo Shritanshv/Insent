@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="165367" started-at="2021-06-06T06:45:43Z" finished-at="2021-06-06T06:48:28Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="165367" started-at="2021-06-06T06:45:43Z" finished-at="2021-06-06T06:48:28Z">
+      <class name="AutomationInsent.InsentAI.FirstTest">
+        <test-method status="PASS" signature="Test1()[pri:0, instance:AutomationInsent.InsentAI.FirstTest@222114ba]" name="Test1" duration-ms="19617" started-at="2021-06-06T12:16:28Z" finished-at="2021-06-06T12:16:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+      </class> <!-- AutomationInsent.InsentAI.FirstTest -->
+      <class name="AutomationInsent.InsentAI.FiveTest">
+        <test-method status="PASS" signature="Test5()[pri:0, instance:AutomationInsent.InsentAI.FiveTest@1d082e88]" name="Test5" duration-ms="24544" started-at="2021-06-06T12:16:04Z" finished-at="2021-06-06T12:16:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test5 -->
+      </class> <!-- AutomationInsent.InsentAI.FiveTest -->
+      <class name="AutomationInsent.InsentAI.loginTest">
+        <test-method status="PASS" signature="Login1()[pri:0, instance:AutomationInsent.InsentAI.loginTest@ec756bd]" name="Login1" duration-ms="14748" started-at="2021-06-06T12:17:11Z" finished-at="2021-06-06T12:17:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login1 -->
+        <test-method status="PASS" signature="Login2()[pri:0, instance:AutomationInsent.InsentAI.loginTest@ec756bd]" name="Login2" duration-ms="16222" started-at="2021-06-06T12:17:26Z" finished-at="2021-06-06T12:17:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login2 -->
+        <test-method status="PASS" signature="Login3()[pri:0, instance:AutomationInsent.InsentAI.loginTest@ec756bd]" name="Login3" duration-ms="18373" started-at="2021-06-06T12:17:42Z" finished-at="2021-06-06T12:18:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login3 -->
+      </class> <!-- AutomationInsent.InsentAI.loginTest -->
+      <class name="AutomationInsent.InsentAI.ThreeTest">
+        <test-method status="PASS" signature="Test3()[pri:0, instance:AutomationInsent.InsentAI.ThreeTest@233fe9b6]" name="Test3" duration-ms="23381" started-at="2021-06-06T12:16:48Z" finished-at="2021-06-06T12:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+      </class> <!-- AutomationInsent.InsentAI.ThreeTest -->
+      <class name="AutomationInsent.InsentAI.SecondTest">
+        <test-method status="PASS" signature="Test2()[pri:0, instance:AutomationInsent.InsentAI.SecondTest@358ee631]" name="Test2" duration-ms="26957" started-at="2021-06-06T12:18:01Z" finished-at="2021-06-06T12:18:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+      </class> <!-- AutomationInsent.InsentAI.SecondTest -->
+      <class name="AutomationInsent.InsentAI.FourTest">
+        <test-method status="PASS" signature="Test4()[pri:0, instance:AutomationInsent.InsentAI.FourTest@3c72f59f]" name="Test4" duration-ms="21223" started-at="2021-06-06T12:15:43Z" finished-at="2021-06-06T12:16:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test4 -->
+      </class> <!-- AutomationInsent.InsentAI.FourTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

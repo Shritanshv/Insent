@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)" preserve-order="true">
+    <classes>
+      <class name="AutomationInsent.InsentAI.FourTest">
+        <methods>
+          <include name="Test4"/>
+        </methods>
+      </class> <!-- AutomationInsent.InsentAI.FourTest -->
+      <class name="AutomationInsent.InsentAI.FiveTest">
+        <methods>
+          <include name="Test5"/>
+        </methods>
+      </class> <!-- AutomationInsent.InsentAI.FiveTest -->
+      <class name="AutomationInsent.InsentAI.SecondTest">
+        <methods>
+          <include name="Test2"/>
+        </methods>
+      </class> <!-- AutomationInsent.InsentAI.SecondTest -->
+      <class name="AutomationInsent.InsentAI.loginTest">
+        <methods>
+          <include name="Login1"/>
+          <include name="Login2"/>
+          <include name="Login3"/>
+        </methods>
+      </class> <!-- AutomationInsent.InsentAI.loginTest -->
+      <class name="AutomationInsent.InsentAI.ThreeTest">
+        <methods>
+          <include name="Test3"/>
+        </methods>
+      </class> <!-- AutomationInsent.InsentAI.ThreeTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
