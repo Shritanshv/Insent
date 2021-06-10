@@ -14,7 +14,7 @@ public class LoginPage {
 	By login=By.xpath("//*[@id=\"root\"]/div[3]/div[2]/form/button[1]/span/span");
 	
 	
-	
+	//
 	
 	public LoginPage(WebDriver driver) {
 		
