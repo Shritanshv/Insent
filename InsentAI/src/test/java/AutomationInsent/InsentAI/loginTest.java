@@ -34,6 +34,7 @@ public class loginTest extends base {
 		
 
 		// creating object to that class and invoke methods of it
+		//global parameter
 		driver.get(prop.getProperty("url"));
 		
 		LoginPage lp= new LoginPage(driver);
