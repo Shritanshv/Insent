@@ -1,59 +1,72 @@
 package AutomationInsent.InsentAI;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
+import pageObjects.LoginPage;
+import resources.base;
+import java.io.IOException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
 
-public class loginTest {
 
+
+public class loginTest extends base {
+    
 	
-	 @Test
-	public void Login1()
+	public WebDriver driver;
+	
+	
+	 
+	@BeforeTest
+	public void initialize() throws IOException
 	{
-		//when ID and password are correct
-		System.setProperty("webdriver.chrome.driver","C:\\\\Users\\\\Govt ITI 4\\\\Desktop\\\\shritansh\\\\selenium\\\\chromedriver_win32\\\\chromedriver.exe" );
-		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
-		driver.get("https://insentrecruitment2.insent.ai/login?redirectUrl=%2F");
-		driver.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div[2]/form/div[2]/div[1]/input")).sendKeys("verma.shritansh@gmail.com");
-		driver.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div[2]/form/div[3]/div[1]/input")).sendKeys("shritansh789");
-		driver.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div[2]/form/button[1]")).click();
-		
 	
+		 driver =initializeDriver();
+
 	}
-	@Test	
-	public void Login2()
 	
+	/*------------------------------------------------------------------------------------*/
+	
+	@Test(dataProvider="getData")
+	
+	public void Test1(String Username,String Password) throws IOException
 	{
-		//when ID is wrong
-		System.setProperty("webdriver.chrome.driver","C:\\\\Users\\\\Govt ITI 4\\\\Desktop\\\\shritansh\\\\selenium\\\\chromedriver_win32\\\\chromedriver.exe" );
-		WebDriver driver1 = new ChromeDriver();
-		driver1.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
-		driver1.get("https://insentrecruitment2.insent.ai/login?redirectUrl=%2F");
-		driver1.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div[2]/form/div[2]/div[1]/input")).sendKeys("verma.shritansh");
-		driver1.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div[2]/form/div[3]/div[1]/input")).sendKeys("shritansh789");
-		driver1.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div[2]/form/button[1]")).click();
+
 		
-	}  
+
+		// creating object to that class and invoke methods of it
+		driver.get(prop.getProperty("url"));
+		
+		LoginPage lp= new LoginPage(driver);
+		lp.getEmail().sendKeys(Username);
+		lp.getPassword().sendKeys(Password);
+		lp.getLogin().click();
+
+	}
+	 
+	/*------------------------------------------------------------------------------------------------*/
 	
-	@Test
-	public void Login3()
-	
+	@DataProvider
+	public Object[][] getData()
 	{
-		//when password is wrong
-		System.setProperty("webdriver.chrome.driver","C:\\\\Users\\\\Govt ITI 4\\\\Desktop\\\\shritansh\\\\selenium\\\\chromedriver_win32\\\\chromedriver.exe" );
-		WebDriver driver2 = new ChromeDriver();
-		driver2.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
-		driver2.get("https://insentrecruitment2.insent.ai/login?redirectUrl=%2F");
-		driver2.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div[2]/form/div[2]/div[1]/input")).sendKeys("verma.shritansh@gmail.com");
-		driver2.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div[2]/form/div[3]/div[1]/input")).sendKeys("shritansh123");
-		driver2.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div[2]/form/button[1]")).click();
-	}   ;
-	
-	
+		
+		Object[][] data=new Object[2][2];
+		//0th row
+		data[0][0]="verma.shritansh@gmail.com";
+		data[0][1]="shritansh789";
+		
+		//1st row
+		data[1][0]="xyz@gmail.com";
+		data[1][1]="456788";
+		
+		
+		return data;
+		
+	}
 	
 }
+	
+	
+	
+	
+	
+	

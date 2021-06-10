@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <test parallel="none" name="Test(failed)" preserve-order="true">
+    <classes>
+      <class name="AutomationInsent.InsentAI.SecondTest">
+        <methods>
+          <include name="Test2"/>
+        </methods>
+      </class> <!-- AutomationInsent.InsentAI.SecondTest -->
+      <class name="AutomationInsent.InsentAI.FirstTest">
+        <methods>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- AutomationInsent.InsentAI.FirstTest -->
+      <class name="AutomationInsent.InsentAI.loginTest">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- AutomationInsent.InsentAI.loginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

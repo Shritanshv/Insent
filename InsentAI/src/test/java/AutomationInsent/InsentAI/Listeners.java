@@ -1,5 +1,5 @@
 package AutomationInsent.InsentAI;
-import java.io.File;
+//import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.OutputType;
@@ -10,8 +10,10 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+//import com.sun.jna.platform.FileUtils;
 
-public class ListenersTest implements ITestListener {
+
+public class Listeners implements ITestListener {
 
 	@Override
 	public void onFinish(ITestContext arg0) {
@@ -35,15 +37,12 @@ public class ListenersTest implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		
-		System.out.println("Test Case failed " +result.getName());
+		
+		
 		
 	}
 
-	@Override
-	public void onTestSkipped(ITestResult arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 	@Override
 	public void onTestStart(ITestResult arg0) {
@@ -59,6 +58,12 @@ public class ListenersTest implements ITestListener {
     
 	
        }
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
 		
 	}
 
